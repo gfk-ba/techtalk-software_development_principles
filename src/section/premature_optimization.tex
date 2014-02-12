@@ -1,0 +1,28 @@
+\begin{frame}
+	\frametitle{Avoid premature optimization}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Writing optimized code takes longer.
+		\item Optimized code is more complex, thus less readable and harder to maintain.
+		\item Optimized code often introduces dependencies.
+		\item Adds no value without an actual performance need.
+		\item Most operations aren't CPU-bound. Optimizing a particular piece of code may have a neglectable impact on overall performance.
+		\item Developers are notoriously bad at estimating what to optimize.
+		\item Compilers and interpreters are far better at optimizing code. Some seeming optimizations may even block the compiler/interpreter from applying it's own optimizations.
+		\item Beware: Don't pessimize prematurely! If it doesn't take longer to implement and doesn't reduce code clarity, please do it.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{How to optimize code, when the need is proven}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Measure first.
+		\item Define optimization goals.
+		\item Look for algorithmic optimization first.
+		\item Try to encapsulate and modularize the optimization.
+		\item Write a comment explaining the reason of the optimization.
+		\item Keep the unoptimized code, both as a reference and to write correctness tests against.
+		\item Run the optimized code in different scenarios, not only in the scenario you're trying to optimize.
+	\end{itemize}
+\end{frame}
+

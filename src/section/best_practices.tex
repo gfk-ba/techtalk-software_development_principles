@@ -1,0 +1,58 @@
+
+\begin{frame}
+	\frametitle{Best practices: Data}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Minimize global and shared data.
+		\item Hide information.
+		\begin{itemize}
+			\item Protects the client by preventing inconsistent state; strenghthens invariants.
+			\item Makes client interfaces clear.
+			\item Decreases coupling.
+			\item Supports future implementation changes.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Best practices: Programming style}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Avoid magic numbers and string literals.
+		\begin{itemize}
+			\item Make semantics clear by assigning the value to a constant with a descriptive name.
+			\item Avoid repetition, reuse the same constant. (DRY!)
+			\item Avoid implicit dependencies.
+			\item Avoid suggestive dependencies.
+		\end{itemize}
+		\item Avoid long functions and deep nesting.
+		\item Prefer build-time errors to run-time errors.
+		\item Avoid cyclic dependencies.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Best practices: Comments}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Write comments well.
+		\item Know what to comment... and what not.
+		\item Always document classes and functions using comments.
+		\item Document a variable if its meaning is not clear from its name and context.
+		\item Add a between-code comment in case the code could work unexpectedly different than it might appear.
+		\item Add a between-code comment to document assumptions.
+		\item Leave out obvious comments.
+		\item Prefer clear code and assertions over comments.
+		\item Prefer DRY comments. Don't repeat (parts of) other comments. Don't repeat logic that is already clear from the code.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Best practices: Design patterns}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Stand on the shoulders of giants!
+		\item Most challenges are generic, with generic solutions already available.
+		\item Common vocabulary to use in design discussions.
+	\end{itemize}
+\end{frame}
+

@@ -1,0 +1,33 @@
+\begin{frame}
+	\frametitle{DRY: Don't Repeat Yourself}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Don't Repeat Yourself
+		\item DON'T REPEAT YOURSELF!.
+		\item No seriously, do not repeat yourself, ever.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{DRY: Why?}
+	\begin{itemize}[<+-| highlight@+>]
+		\item ``Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.''
+		\item Implicit dependencies can and will eventually cause inconsistencies in your system.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{DRY: In practice}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Remove duplicate (i.e. 100\% identical) code.
+		\item Code should not contain the same logic twice, even if it's just a single statement.
+		\item Prevent fields with derivative data in model design.
+		\item Prefer parameterized helpers over logical code units that are more than 50\% similar.
+		\item Write short and concise function bodies. This helps you detecting similar code.
+		\item Does not only apply to code, but to all project sources. E.g.: database schemas, configuration definitions, build/C.I. system, documentation, ...
+		\item Use code/documentation/... generators in order to keep your sources free from repetition.
+		\item Check for repetition during code review.
+	\end{itemize}
+\end{frame}
+

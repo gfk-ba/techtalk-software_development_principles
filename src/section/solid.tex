@@ -1,0 +1,63 @@
+\begin{frame}
+	\frametitle{\alert{S}OLID: Single responsibility principle}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Give each \emph{entity} (variable, function, class, namespace, module, library, system) \alert{one} well-defined responsibility.
+		\item Entities with multiple responsibilities are hard to design and implement.
+		\begin{itemize}
+			\item The number of combinations of the entity's state and behavior easily explodes.
+		\end{itemize}
+		\item Always describe the responsibility of an entity in a comment inside the code. For variables, a descriptive name can be sufficient.
+		\begin{itemize}
+			\item Rule of thumb: If the responsibility can't be described without conjunctives or disjunctives, then it violates this principle.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{S\alert{O}LID: Open/closed principle}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Software entities should be open for extension, but closed for modification.
+		\item \emph{Open}: Extension points of an entity and their correct usage are clearly defined.
+		\item \emph{Closed}: The behavior of the entity can be modified without changing its source code.
+		\begin{itemize}
+			\item But only the parts that are designed to be modifiable.
+			\item No need for recompilation, code reviews, running unit tests of the original entity.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{SO\alert{L}ID: Liskov substitution principle}
+	\begin{itemize}[<+-| highlight@+>]
+		\item ``Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.''
+		\item This principle imposes a number of requirements on the definition and implementation of subtypes and their methods.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{SOL\alert{I}D: Interface segregation principle}
+	\begin{itemize}[<+-| highlight@+>]
+		\item ``No client should be forced to depend on methods it does not use.''
+		\item Use concise, specific interfaces instead of bulky multi-purpose interfaces.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{SOLI\alert{D}: Dependency inversion principle}
+	\begin{itemize}[<+-| highlight@+>]
+		\item High-level modules should not depend on low-level modules.
+		\item Abstractions should not depend on details. Details should depend on abstractions.
+		\item Useful techniques:
+		\begin{itemize}
+			\item Inversion of Control.
+			\item Dependency Injection.
+			\item Plugins.
+			\item Interfaces.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
