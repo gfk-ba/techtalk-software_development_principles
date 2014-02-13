@@ -1,3 +1,12 @@
+Tech Talk: Software Development Principles
+==========================================
+
+Pre-built PDF files can be found in the `pdf` subdirectory.
+
+
+Build requirements:
+-------------------
+
 Requirements: pdflatex, beamer-latex
 
 Build instructions:
